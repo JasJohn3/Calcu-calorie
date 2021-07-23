@@ -133,7 +133,8 @@ const app_id ='53176885';
 const app_key =`dcc65d6f68a2bc26b969cc0afbd04c6d`;
 let originalURL =`https://api.edamam.com/api/recipes/v2?type=public&q=Chicken&app_id=53176885&app_key=%20dcc65d6f68a2bc26b969cc0afbd04c6d&imageSize=SMALL&field=label&field=image&field=source&field=url&field=ingredients&field=calories`
 // let field = [`label`,`image`,`source`,`url`]
-let field = `&label&field=image&field=source&field=url&field=calories`;
+let field = `&field=label&field=image&field=source&field=url&field=calories`;
+let fieldArr = ['label','image','source','url','calories']
 console.log(field)
 let params = new URLSearchParams({
   type : `public`,
@@ -146,8 +147,9 @@ let params = new URLSearchParams({
 
 let recipeAPIURL =`https://api.edamam.com/api/recipes/v2?`
 
-console.log(params);
+console.log(params.toString());
 let requestURL =recipeAPIURL +params +field;
+console.log(requestURL);
 function recipeCall (){
   fetch(requestURL)
   .then(response => response.json())
