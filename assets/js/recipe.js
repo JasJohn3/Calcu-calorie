@@ -153,8 +153,13 @@ console.log(requestURL);
 function recipeCall (){
   fetch(requestURL)
   .then(response => response.json())
-  .then(data => console.log(data.hits))
+  .then(data => {
+    parseRecipesData(data.hits);
+  })
   .catch(err => console.log(err));
+}
+function parseRecipesData(dataArr){
+  console.log(dataArr);
 }
 // recipeCall();
 
