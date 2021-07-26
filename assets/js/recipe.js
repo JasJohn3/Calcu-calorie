@@ -158,7 +158,7 @@ let requestURL =recipeAPIURL +params +field;
   .catch(err => console.log(err));
 }
 function parseRecipesData(dataArr){
-  console.log(dataArr);
+  parseRecipes(dataArr);
 }
 function searchButton(e){
   e.preventDefault();
@@ -166,9 +166,57 @@ function searchButton(e){
   console.log(search);
   let searchValue = search.value;
   recipeCall(searchValue);
+  search.value = '';
+  let recipeResults = document.getElementById('recipe-results');
+  recipeResults.innerHTML = '';
+  
 }
-// recipeCall();
-// Initialize Tabs
+function parseRecipes(array){
+  let recipeResults = document.getElementById('recipe-results');
+  array.forEach((item, index) =>{
+    let col = document.createElement('div');
+    col.classList.add('col');
+    col.classList.add('s12');
+    col.classList.add('m6');
+    col.setAttribute('id', `recipe-col-${index}`);
+    let image =item.recipe.image;
+    console.log(image)
+    let label = item.recipe.label;
+    console.log(label);
+    let source = item.recipe.source;
+    console.log(source);
+    let url = item.recipe.url;
+    console.log(url);
+    // if (index%2 ===0) {
+    //   let row =document.createElement('div');
+    //   row.classList.add('row');
+    //   row.setAttribute('id', `recipe-row-${index}`);
+    //   row.append(col);
+    // }
+    col.innerHTML = recipeCardCreator(image, label, source,url);
+    recipeResults.append(col);
+  })
+}
+function recipeCardCreator(image, label, source,url){
+ let card =
+ `
+ <div class="card green lighten">
+    <div class="card-image">
+      <img src=${image} alt="">
+      <span class="card-title black">${label}</span>
+    </div>
+    <div class="card-content">
+      <p>Source: ${source}</p>
+    </div>
+    <div class="card-action">
+      <a href=${url} class="btn waves-effect waves-light green darken-4">
+        website
+      </a>
+    </div>
+</div>
+ `;
+ return card;
+}
 var el = document.querySelector('.tabs');
 var instance = M.Tabs.init(el, {});
 let searchRecipeButton = document.getElementById('search-recipe-button');
