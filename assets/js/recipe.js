@@ -162,4 +162,6 @@ function parseRecipesData(dataArr){
   console.log(dataArr);
 }
 // recipeCall();
-
+// Initialize Tabs
+var el = document.querySelector('.tabs');
+var instance = M.Tabs.init(el, {});

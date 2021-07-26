@@ -4,23 +4,79 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Document</title>
+  <title>Recipe Finder</title>
 </head>
 <body>
-  <div class="row">
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <i class="material-icons prefix">search</i>
-          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-          <label for="icon_prefix2">First Name</label>
+  <header>
+    <nav class="green">
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#" class="brand-logo">Calcu-Calorie</a>
+          <ul id="nav-mobile" class="right hide-on-small-and-down">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="./nutrition.html">Nutrition</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </form>
-  </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 card-panel">
+          <div class="row">
+            <div class="input-field col s4">   
+              <input type="text" id="search" class="autocomplete">
+              <label for="search">Search</label>
+              <button class="btn white green-text waves-effect waves-green" href="#!"><i class="material-icons left green-text">search</i>Search</button>
+            </div>
+            <div class="col s12 m8">
+              <div class="card green white-text">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-tabs">
+                  <ul class="tabs tabs-fixed-width tabs-transparent">
+                    <li class="tab"><a href="#step1">step 1</a></li>
+                    <li class="tab"><a href="#step2">step 2</a></li>
+                    <li class="tab"><a href="#step3">step 3</a></li>
+                  </ul>
+                </div>
+                <div class="card-content green darken-4">
+                  <div id="step1">step 1</div>
+                  <div id="step2">step 2</div>
+                  <div id="step3">step 3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+
+
+   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script type="module" src="./assets/js/recipe.js"></script>
+  <script>
+
+  </script>
+
 </body>
 </html>
