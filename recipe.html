@@ -37,10 +37,17 @@
       <div class="row">
         <div class="col s12 card-panel">
           <div class="row">
-            <div class="input-field col s4">   
-              <input type="text" id="search" class="autocomplete">
-              <label for="search">Search</label>
-              <button class="btn white green-text waves-effect waves-green" href="#!"><i class="material-icons left green-text">search</i>Search</button>
+
+            <div class="col s12 m4">   
+              <form>
+                <div class="input-field">
+                  <input type="text" id="search-recipe" class="autocomplete">
+                  <label for="search-recipe">Search</label>
+                </div>
+                <button class="btn white green-text waves-effect waves-green prefix" id="search-recipe-button">
+                  <i class="material-icons left green-text">search</i>Search
+                </button>
+              </form>
             </div>
             <div class="col s12 m8">
               <div class="card green white-text">
@@ -62,6 +69,11 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 card-panel" id="results">
+
         </div>
       </div>
     </div>

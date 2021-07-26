@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 let hits = [    {
   "recipe": {
     "label": "Chicken Vesuvio",
@@ -161,7 +162,21 @@ function recipeCall (){
 function parseRecipesData(dataArr){
   console.log(dataArr);
 }
+function searchButton(e){
+  e.preventDefault();
+  let search = document.getElementById('search-recipe');
+  console.log(search);
+  let searchValue = search.value;
+  console.log(searchValue);
+}
 // recipeCall();
 // Initialize Tabs
 var el = document.querySelector('.tabs');
 var instance = M.Tabs.init(el, {});
+let searchRecipeButton = document.getElementById('search-recipe-button');
+
+searchRecipeButton.addEventListener('click',searchButton);
+
+  var elems = document.querySelectorAll('.autocomplete');
+  var instances = M.Autocomplete.init(elems, {});
+});
