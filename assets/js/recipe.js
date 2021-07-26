@@ -177,4 +177,6 @@ searchRecipeButton.addEventListener('click',searchButton);
 
   var elems = document.querySelectorAll('.autocomplete');
   var instances = M.Autocomplete.init(elems, {});
+  var elems = document.querySelectorAll('.parallax');
+  var instances = M.Parallax.init(elems, {});
 });
