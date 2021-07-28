@@ -59,10 +59,10 @@
             <div class="col s12 m4">   
               <form>
                 <div class="input-field">
-                  <input type="text" id="search-recipe" class="autocomplete">
-                  <label for="search-recipe">Search</label>
+                  <input type="text" id="search-nutrition" class="autocomplete">
+                  <label for="search-nutrition">Search</label>
                 </div>
-                <button class="btn white blue-text waves-effect waves-blue prefix" id="search-recipe-button">
+                <button class="btn white blue-text waves-effect waves-blue prefix" id="search-nutrition-button">
                   <i class="material-icons left blue-text">search</i>Search
                 </button>
               </form>
@@ -71,20 +71,19 @@
               <div class="card blue white-text">
                 <div class="card-content">
                   <span class="card-title">Calcu-Calorie</span>
-                  <span class="card-subtitle">Recipe Search</span>
-                  <p>Welcome to calcu-calorie Recipe Search. Follow the steps below and you will receive twenty different recipes for each search entered.</p>
+                  <span class="card-subtitle">Nutrion Search</span>
+                  <p>Welcome to calcu-calorie nutrition Search. Follow the steps below and you will receive basic nutritional information for various ingredients.</p>
                 </div>
                 <div class="card-tabs">
                   <ul class="tabs tabs-fixed-width tabs-transparent">
                     <li class="tab"><a href="#step1">step 1</a></li>
-                    <li class="tab"><a href="#step2">step 2</a></li>
-                    <li class="tab"><a href="#step3">step 3</a></li>
+                    <li class="tab"><a href="#step2">step 2</a></li>                 
                   </ul>
                 </div>
                 <div class="card-content blue darken-4">
                   <div id="step1">
                     <p class="flow-text">
-                      Enter a value into the search field and press the search button e.g. <em>Chicken, Italian, Beef, Dessert
+                      Enter a value into the search field and press the search button e.g. <em>Chicken, Eggs, Beef, Cheese
 
                       </em></p>
                     <div class="row white">
@@ -114,22 +113,8 @@
                       </div>
                       <div class="col s12 m6">
                         <p class="flow-text">
-                          Select the recipe card you wish to use and view a preview of the dish from the image on the card.
+                          View the nutritional facts in the Nutrition card created from the search.
                         </p>
-                      </div>
-                    </div>
-                    </div>
-                  </div>
-                  <div id="step3">
-                    <div class="row">
-                      <div class="col">
-                        <p class="flow-text">
-                          Follow the link by selecting the website button for detailed cooking instructions.
-                        </p>
-                        <div class="secondary-content">
-                          <a href="#" class="btn waves-effect waves-light blue darken-4">
-                            website
-                          </a>
                       </div>
                     </div>
                     </div>
@@ -148,7 +133,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="row" id="recipe-results">
+        <div class="row" id="nutrition-results">
           
         </div>
       </div>
@@ -213,5 +198,5 @@
 
    <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script type="module" src="./assets/js/recipe.js"></script>
+  <script type="module" src="./assets/js/nutrition.js"></script>
   <script>

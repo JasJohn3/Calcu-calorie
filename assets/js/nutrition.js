@@ -27,4 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var instances = M.Parallax.init(elems, {});
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems);
+  var el = document.querySelector('.tabs');
+  var instance = M.Tabs.init(el, {});
+  let searchRecipeButton = document.getElementById('search-nutrition-button');
 });
