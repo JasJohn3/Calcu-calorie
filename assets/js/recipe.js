@@ -80,4 +80,6 @@ searchRecipeButton.addEventListener('click',searchButton);
   var instances = M.Autocomplete.init(elems, {});
   var elems = document.querySelectorAll('.parallax');
   var instances = M.Parallax.init(elems, {});
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems);
 });
