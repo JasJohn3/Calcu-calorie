@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function parseNutrition(data){
- console.log(data);
+  console.log(data.totalNutrientsKCal);
   }
   function searchButton(e){
     e.preventDefault();
