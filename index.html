@@ -4,12 +4,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" integrity="sha512-17AHGe9uFHHt+QaRYieK7bTdMMHBMi8PeWG99Mf/xEcfBLDCn0Gze8Xcx1KoSZxDnv+KnCC+os/vuQ7jrF/nkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Document</title>
 </head>
 <body>
-  <h1>UofA Project 1</h1>
+  <header>
+    <nav>
+      <div class="nav-wrapper green">
+        <a href="index.html" class="brand-logo center">CalcuCalorie</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="recipe.html">Recipe</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+        </ul>
+      </div>
+    </nav>
+        <ul class="sidenav" id="mobile-demo">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="recipe.html">Recipe</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+  </header>
+
+  <main>
+    <h1>UofA Project 1</h1>
+  </main>
+
+  <footer class="page-footer green">
+    <div class="footer-copyright">
+      <div class="container white-text">
+        © 2021 CalcuCalorie
+        <a class="white-text right" href="#!">About Us</a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./assets/js/app.js"></script>
 </body>
 </html>
