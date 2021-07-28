@@ -14,13 +14,20 @@ document.addEventListener('DOMContentLoaded', function() {
     fetch(requestURL)
     .then(response => response.json())
     .then(data => {
-      parseNutrition(data);
+      parseNutrition(searchValue,data);
     })
     .catch(err => console.log(err));
   }
 
-  function parseNutrition(data){
-  console.log(data.totalNutrientsKCal);
+  function parseNutrition(search,data){
+
+  let chol = data.totalNutrientsKCal.CHOCDF_KCAL;
+  let fat = data.totalNutrientsKCal.FAT_KCAL;
+  let prot =data.totalNutrientsKCal.PROCNT_KCAL;
+  let energy =data.totalNutrientsKCal.ENERC_KCAL;
+  console.log(search,chol,fat,prot,energy)
+  let nutritionResults = document.getElementById('nutrition-results');
+  nutritionResults.innerHTML = createNutritionCard(search,chol,fat,prot,energy);
   }
   function searchButton(e){
     e.preventDefault();
@@ -31,6 +38,40 @@ document.addEventListener('DOMContentLoaded', function() {
     search.value = '';
     let nutritionResults = document.getElementById('nutrition-results');
     nutritionResults.innerHTML = '';
+  }
+  function createNutritionCard(search,cholesterol,fat,protein,energy){
+    let card = `
+    <div class="card-panel white blue-text">
+        <h4 class="blue darken-4 center-align white-text">${search}</h4>
+        <table class="highlight">
+          <thead>
+            <tr>
+                <th>Type</th>
+                <th>Calories</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>${cholesterol.label}</td>
+              <td>${cholesterol.quantity}</td>
+            </tr>
+            <tr>
+              <td>${fat.label}</td>
+              <td>${fat.quantity}</td>
+            </tr>
+            <tr>
+              <td>${protein.label}</td>
+              <td>${protein.quantity}</td>
+            </tr>
+            <tr>
+              <td>${energy.label}</td>
+              <td>${energy.quantity}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    `;
+    return card;
   }
   var elems = document.querySelectorAll('.parallax');
   var instances = M.Parallax.init(elems, {});
