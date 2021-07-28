@@ -31,7 +31,6 @@ function searchButton(e){
   search.value = '';
   let recipeResults = document.getElementById('recipe-results');
   recipeResults.innerHTML = '';
-  
 }
 function parseRecipes(array){
   let recipeResults = document.getElementById('recipe-results');
