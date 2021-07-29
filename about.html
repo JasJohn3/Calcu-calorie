@@ -6,6 +6,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!-- Font Awesom CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- in your header -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+
     <!--Import materialize.css-->
     <link
       rel="stylesheet"
@@ -20,7 +25,7 @@
   </head>
   <body>
     <header>
-      <nav class="green">
+      <nav class="blue-grey darken-4">
         <div class="nav-wrapper">
           <a href="index.html" class="brand-logo center">CalcuCalorie</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"
@@ -42,102 +47,132 @@
       </ul>
     </header>
     <main>
-      <div class="card-panel green white-text">
-        <h1 class="center-align green darken-4">About Us</h1>
+      <div class="card-panel white black-text">
+        <h1 class="center-align blue-grey darken-4 white-text">About Us</h1>
         <div class="col s12 m8 offset-m2 l6 offset-l3">
           <div class="center-align">
-            <div class="col s2">
-              <img
-                src="./assets/images/foodcalc.jpeg"
-                alt="food-calc"
-                class="circle"
-              />
-              <!-- notice the "circle" class -->
-            </div>
-          </div>
-        </div>
-        <p class="flow-text center-align">
-          Nam ac condimentum elit, eu facilisis sapien. Etiam auctor diam id
-          diam blandit, vitae elementum est maximus. Maecenas sit amet dolor
-          hendrerit, gravida erat sit amet, fringilla quam. Nulla lacus nulla,
-          molestie non luctus ut, vestibulum non sapien. Praesent sapien tortor,
-          ultrices in justo eget, condimentum tempor erat. Sed vestibulum quam
-          non vehicula rutrum. Ut eget aliquam arcu. Vivamus tempor massa elit,
-          a cursus purus vehicula vitae.
-        </p>
-        <h2 class="center-align">Meet the Team</h2>
-        <div class="row">
-          <div class="col s12 m6 l3">
-            <div class="card green darken-4">
-              <div class="card-content white-text">
-                <span class="card-title">Jason Johnson</span>
-                <p>Software Developer</p>
+            <div class="row">
+              <div class="col s12 m2">
+                <img src="./assets/img/about/ua_stack_rgb_4.svg" alt="">
+                <!-- notice the "circle" class -->
               </div>
-              <div class="card-action">
-                <a href="https://github.com/JasJohn3">
-                  <img
-                    class="github responsive-img"
-                    src="./assets/images/github.png"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
+              <div class="col s12 m8">
+                <div class="row">
+                  <div class="col s12">
+                    <p class="flow-text left-align">
+                      We are students attending University of Arizona Coding Bootcamp. The focus is on full stack web development.
+                    </p>
+                  </div>
+                  <div class="col s12 card-panel">
+                    <ul class="collection with-header">
+                      <li class="collection-header"><h4>Designed With</h4></li>
+                      <li class="collection-item left-align">
+                        Materialize.css
+                        <a class=" secondary-content pink-text text-lighten-3" href="http://materializecss.com"
+                          >Materialize
+                        </a>
+                      </li>
+                      <li class="collection-item left-align">
+                        Javascript
+                        <i class="secondary-content devicon-javascript-plain colored fa-2x"></i>
+                      </li>
+                      <li class="collection-item left-align">
+                        HTML5
+                        <i class="secondary-content devicon-html5-plain-wordmark colored fa-2x"></i>
+                      </li>
+                      <li class="collection-item left-align">
+                        CSS3
+                        <i class="secondary-content devicon-css3-plain-wordmark colored fa-2x"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-          <div class="col s12 m6 l3">
-            <div class="card green darken-4">
-              <div class="card-content white-text">
-                <span class="card-title">Matt Gaunt</span>
-                <p>Software Developer</p>
-              </div>
-              <div class="card-action">
-                <a href="https://github.com/MPGaunt">
-                  <img
-                    class="github responsive-img"
-                    src="./assets/images/github.png"
-                  />
-                </a>
               </div>
             </div>
-          </div>
 
-          <div class="col s12 m6 l3">
-            <div class="card green darken-4">
-              <div class="card-content white-text">
-                <span class="card-title">Matt Parker</span>
-                <p>Software Developer</p>
-              </div>
-              <div class="card-action">
-                <a href="https://github.com/Matt545">
-                  <img
-                    class="github responsive-img"
-                    src="./assets/images/github.png"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l3">
-            <div class="card green darken-4">
-              <div class="card-content white-text">
-                <span class="card-title">Zachary López</span>
-                <p>Software Developer</p>
-              </div>
-              <div class="card-action">
-                <a href="https://github.com/Moonman9">
-                  <img
-                    class="github responsive-img"
-                    src="./assets/images/github.png"
-                  />
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
+        
+        <div class="row blue-grey darken-4">
+          <h2 class="center-align white-text">Meet the Team</h2>
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/img/about/UofABootcamp.png" alt="">
+                <span class="card-title blue-grey darken-4">Jason Johnson</span>
+                <a class="btn-floating halfway-fab waves-effect waves-light black pulse" href="https://github.com/JasJohn3" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p>Software Developer</p>
+              </div>
+              <div class="card-action">
+                <a href="https://bootcamp.ce.arizona.edu/coding/" class="btn blue waves-effect waves-light" target="_blank">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/img/about/UofABootcamp.png" alt="">
+                <span class="card-title blue-grey darken-4">Matt Gaunt</span>
+                <a class="btn-floating halfway-fab waves-effect waves-light black pulse" href="https://github.com/MPGaunt" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p>Software Developer</p>
+              </div>
+              <div class="card-action">
+                <a href="https://bootcamp.ce.arizona.edu/coding/" class="btn blue waves-effect waves-light" target="_blank">Learn More</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/img/about/UofABootcamp.png" alt="">
+                <span class="card-title blue-grey darken-4">Matt Parker</span>
+                <a class="btn-floating halfway-fab waves-effect waves-light black pulse" href="https://github.com/Matt545" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p>Software Developer</p>
+              </div>
+              <div class="card-action">
+                <a href="https://bootcamp.ce.arizona.edu/coding/" class="btn blue waves-effect waves-light" target="_blank">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/img/about/UofABootcamp.png" alt="">
+                <span class="card-title blue-grey darken-4">Zachary López</span>
+                <a class="btn-floating halfway-fab waves-effect waves-light black pulse" href="https://github.com/Moonman9" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <div class="card-content">
+                <p>Software Developer</p>
+              </div>
+              <div class="card-action">
+                <a href="https://bootcamp.ce.arizona.edu/coding/" class="btn blue waves-effect waves-light" target="_blank">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
     </main>
-    <footer class="page-footer teal">
+    <footer class="page-footer blue-grey">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
