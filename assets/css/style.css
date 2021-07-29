@@ -2,4 +2,16 @@ body{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+nav ul li:hover, nav ul li.active {
+  /* background-color: green; */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
 }

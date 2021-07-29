@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Recipe Finder</title>
+</head>
+<body>
+  <header>
+    <nav class="green">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo center">CalcuCalorie</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li class="active darken-4"><a href="recipe.html">Recipe</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+        <ul class="sidenav" id="mobile-demo">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="recipe.html">Recipe</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+  </header>
+  <main>
+    <div id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br><br>
+          <h1 class="header center teal-text text-lighten-2">Calcu-Calorie</h1>
+
+          <div class="row center">
+            <a href="https://developer.edamam.com/" target="_blank" id="download-button" class="btn-large waves-effect waves-light green lighten-2">Reference</a>
+          </div>
+          <br><br>
+  
+        </div>
+      </div>
+      <div class="parallax">
+        <img src="./assets/img/vegetables-bg.jpg" >
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 card-panel">
+          <div class="row">
+
+            <div class="col s12 m4">   
+              <form>
+                <div class="input-field">
+                  <input type="text" id="search-recipe" class="autocomplete">
+                  <label for="search-recipe">Search</label>
+                </div>
+                <button class="btn white green-text waves-effect waves-green prefix" id="search-recipe-button">
+                  <i class="material-icons left green-text">search</i>Search
+                </button>
+              </form>
+            </div>
+            <div class="col s12 m8">
+              <div class="card green white-text">
+                <div class="card-content">
+                  <span class="card-title">Calcu-Calorie</span>
+                  <span class="card-subtitle">Recipe Search</span>
+                  <p>Welcome to calcu-calorie Recipe Search. Follow the steps below and you will receive twenty different recipes for each search entered.</p>
+                </div>
+                <div class="card-tabs">
+                  <ul class="tabs tabs-fixed-width tabs-transparent">
+                    <li class="tab"><a href="#step1">step 1</a></li>
+                    <li class="tab"><a href="#step2">step 2</a></li>
+                    <li class="tab"><a href="#step3">step 3</a></li>
+                  </ul>
+                </div>
+                <div class="card-content green darken-4">
+                  <div id="step1">
+                    <p class="flow-text">
+                      Enter a value into the search field and press the search button e.g. <em>Chicken, Italian, Beef, Dessert
+
+                      </em></p>
+                    <div class="row white">
+                      <div class="input-field col s12">
+                        <input disabled value="Chicken" id="disabled" type="text" class="validate">
+                        <label for="disabled">Disabled</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="step2">
+                    <div class="row">
+                      <div class="col s12 m6">
+                        <div class="card small green lighten">
+                          <div class="card-image">
+                            <img src="https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg" alt="">
+                            <span class="card-title black">Chicken Vesuvio</span>
+                          </div>
+                          <div class="card-content">
+                            <p>Source: Serious Eats</p>
+                          </div>
+                          <div class="card-action">
+                            <a href="http://www.seriouseats.com/recipes/2011/12/chicken-vesuvio-recipe.html" class="btn waves-effect waves-light green darken-4">
+                              website
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s12 m6">
+                        <p class="flow-text">
+                          Select the recipe card you wish to use and view a preview of the dish from the image on the card.
+                        </p>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div id="step3">
+                    <div class="row">
+                      <div class="col">
+                        <p class="flow-text">
+                          Follow the link by selecting the website button for detailed cooking instructions.
+                        </p>
+                        <div class="secondary-content">
+                          <a href="#" class="btn waves-effect waves-light green darken-4">
+                            website
+                          </a>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+
+        </div>
+        <div class="parallax"><img src="./assets/img/salad-bg.jpg" alt="Unsplashed background img 3">
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" id="recipe-results">
+          
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+
+      </div>
+    </div>
+    <div class="parallax"><img src="./assets/img/vegetables-bg2.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer green">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">UofA Coding Bootcamp</h5>
+          <p class="grey-text text-lighten-4">We are a small team creating responsive web products.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li>
+              <a class="white-text" href="./index.html">Home</a>
+            </li>
+            <li>
+              <a class="white-text" href="#">About</a>
+            </li>
+            <li>
+              <a class="white-text" href="./nutrition.html">Nutrition</a>
+            </li>
+            <li>
+              <a class="white-text" href="https://developer.edamam.com/">Edamam</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Jason Johnson</a></li>
+            <li><a class="white-text" href="#!">Matt Gaunt</a></li>
+            <li><a class="white-text" href="#!">Zachary Lopez</a></li>
+            <li><a class="white-text" href="#!">Matt Parker</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+      <div class="container white-text">
+        © 2021 CalcuCalorie
+      </div>
+    </div>
+  </footer>
+
+
+   <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="module" src="./assets/js/recipe.js"></script>
+  <script>
+
+  </script>
+
+</body>
+</html>
