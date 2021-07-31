@@ -81,4 +81,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var instance = M.Tabs.init(el, {});
   let searchNutritionButton = document.getElementById('search-nutrition-button');
   searchNutritionButton.addEventListener('click', searchButton);
+  var elems = document.querySelectorAll('.modal');
+  var instances = M.Modal.init(elems, {});
 });
