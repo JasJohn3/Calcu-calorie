@@ -47,6 +47,9 @@ function parseRecipes(array){
 
     col.innerHTML = recipeCardCreator(image, label, source,url);
     recipeResults.append(col);
+    setTimeout(()=>{
+      recipeResults.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    },500);
   })
 }
 function recipeCardCreator(image, label, source,url){
