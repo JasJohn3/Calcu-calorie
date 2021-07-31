@@ -61,7 +61,7 @@ function recipeCardCreator(image, label, source,url){
       <p>Source: ${source}</p>
     </div>
     <div class="card-action">
-      <a href=${url} class="btn waves-effect waves-light green darken-4">
+      <a target="_blank" href=${url} class="btn waves-effect waves-light green darken-4">
         website
       </a>
     </div>
