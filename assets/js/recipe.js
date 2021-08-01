@@ -72,10 +72,46 @@ function recipeCardCreator(image, label, source,url){
  `;
  return card;
 }
-var el = document.querySelector('.tabs');
-var instance = M.Tabs.init(el, {});
-let searchRecipeButton = document.getElementById('search-recipe-button');
 
+// localStorageHistory =(store_data)=>{
+//   // Local Storage Steps
+//   let localHistory =JSON.parse(localStorage.getItem('recipe'))||[];
+//   localHistory.push(store_data);
+//   localStorage.setItem('recipe',JSON.stringify(localHistory));
+//   createRecipeFavoriteEl(localHistory);
+//   // Local Storage Steps
+// }
+// createRecipeFavoriteEl=(localHistory)=>{
+//   let uniqueHistory = [...new Set(localHistory)];
+//   uniqueHistory.splice(10);
+//   favoritesHistoryUL = document.getElementById('favorites');
+//   favoritesHistoryUL.innerHTML ='';
+//   uniqueHistory.forEach(item =>{
+//     liEl = document.createElement('li');
+//     liEl.classList.add("collection-item");
+//     liEl.classList.add('green-text');
+//     let liHTML = `
+//     <div>${item.label}
+//     <a href="${item.url}" class="secondary-content">
+//       <i class="material-icons">send</i>
+//     </a>
+//   </div>
+//     `;
+//     // liEl.className("list-group-item text-dark");
+//     liEl.innerHTML =liHTML;
+//     favoritesHistoryUL.append(liEl);
+//   });
+// }
+function addFavorite(e){
+  
+    if (e.target.matches('a')) {
+      console.log(e.target);
+    }
+    
+}
+let searchRecipeButton = document.getElementById('search-recipe-button');
+let recipeResults = document.getElementById('recipe-results');
+recipeResults.addEventListener('click',addFavorite);
 searchRecipeButton.addEventListener('click',searchButton);
 
 
@@ -83,4 +119,6 @@ searchRecipeButton.addEventListener('click',searchButton);
   var instances = M.Parallax.init(elems, {});
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems);
+  var el = document.querySelector('.tabs');
+  var instance = M.Tabs.init(el, {});
 });
