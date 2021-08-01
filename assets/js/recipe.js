@@ -63,10 +63,14 @@ function recipeCardCreator(image, label, source,url){
     <div class="card-content">
       <p>Source: ${source}</p>
     </div>
-    <div class="card-action">
-      <a target="_blank" href=${url} class="btn waves-effect waves-light green darken-4">
+    <div class="card-action white card-panel">
+      <a target="_blank" href=${url} class="btn waves-effect waves-light white green-text darken-4 right">
         website
       </a>
+      <button class="btn white green-text waves-effect waves-orange left">
+      <i class="material-icons left orange-text">star</i>Favorite
+      </button>
+      <div class="clearfix"></div>
     </div>
 </div>
  `;
@@ -103,7 +107,7 @@ function recipeCardCreator(image, label, source,url){
 //   });
 // }
 function addFavorite(e){
-  
+  console.log(e);
     if (e.target.matches('a')) {
       console.log(e.target);
     }
